@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2015 at 11:12 AM
+-- Generation Time: Jan 03, 2016 at 07:54 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -78,7 +78,28 @@ INSERT INTO `aktifitas` (`id_aktifitas`, `id_user`, `aktifitas`, `tanggal`) VALU
 (55, 3, 'Telah melakukan Update pada Pariwisata asdasdasd', '2015-12-31 15:38:40'),
 (56, 3, 'Telah melakukan Delete pada Pariwisata ASDASD', '2015-12-31 15:39:07'),
 (57, 3, 'Telah melakukan Delete pada Pariwisata ', '2015-12-31 15:40:36'),
-(58, 3, 'Telah melakukan Delete pada Pariwisata asdasdasd', '2015-12-31 15:40:45');
+(58, 3, 'Telah melakukan Delete pada Pariwisata asdasdasd', '2015-12-31 15:40:45'),
+(59, 3, 'Telah melakukan Input data pada Pariwisata A asd', '2016-01-01 11:35:26'),
+(60, 3, 'Telah melakukan Input data pada Pariwisata A a d asasd', '2016-01-01 13:13:51'),
+(61, 3, 'Telah melakukan input data berita dengan judul  bebi', '2016-01-01 13:14:19'),
+(62, 3, 'Telah melakukan Input data pada Pariwisata asdasd', '2016-01-02 02:18:19'),
+(63, 3, 'Telah melakukan Update data Berita dijudul asdasdasda8989', '2016-01-02 02:36:03'),
+(64, 3, 'Telah melakukan Update pada Pariwisata asdasd', '2016-01-02 02:38:40'),
+(65, 3, 'Telah melakukan Update pada Pariwisata asdasd', '2016-01-02 02:38:51'),
+(66, 3, 'Telah melakukan Update pada Pariwisata asdasd', '2016-01-02 02:46:46'),
+(67, 3, 'Telah melakukan proses penerimaan rekomendasi dari brontoxdengan pariwisata jo pj', '2016-01-02 03:27:55'),
+(68, 3, 'Telah melakukan proses penerimaan rekomendasi dari brontoxdengan pariwisata jo pj', '2016-01-02 03:29:00'),
+(69, 3, 'Telah melakukan Update data Berita dijudul asdasdasda8989', '2016-01-02 05:58:52'),
+(70, 3, 'Telah melakukan Update pada Pariwisata jo pj', '2016-01-03 00:09:18'),
+(71, 3, 'Telah melakukan Input data pada Pariwisata koplak', '2016-01-03 01:58:15'),
+(72, 3, 'Telah melakukan Update pada Pariwisata koplak', '2016-01-03 16:08:12'),
+(73, 3, 'Telah melakukan Update pada Pariwisata koplak', '2016-01-03 16:22:38'),
+(74, 3, 'Telah melakukan Update pada Pariwisata koplak', '2016-01-03 16:23:40'),
+(75, 3, 'Telah melakukan Update pada Pariwisata asdasd', '2016-01-04 00:16:23'),
+(76, 3, 'Telah melakukan Update pada Pariwisata jo pj', '2016-01-04 00:17:15'),
+(77, 3, 'Telah melakukan proses penerimaan rekomendasi dari brontoxdengan pariwisata Ancol', '2016-01-04 00:42:12'),
+(78, 3, 'Telah melakukan Delete pada Pariwisata Ancol', '2016-01-04 00:45:04'),
+(79, 3, 'Telah melakukan proses penerimaan rekomendasi dari brontoxdengan pariwisata Ancol', '2016-01-04 00:46:55');
 
 -- --------------------------------------------------------
 
@@ -99,11 +120,12 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id_berita`, `judul_berita`, `isi_berita`, `foto_berita`, `tanggal`) VALUES
-(8, 'asdasdasda', 'asdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd', 'closeupgaben1.jpg', '2015-12-11 18:55:55'),
+(8, 'asdasdasda8989', '<p><b style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;"><a href="https://id.wikipedia.org/wiki/Umat_Katolik_Mangalore" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" title="Umat Katolik Mangalore">Umat Katolik Mangalore</a></b><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;adalah sebuah komunitas&nbsp;</span><a href="https://id.wikipedia.org/wiki/Kelompok_etnoreligius" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Kelompok etnoreligius">etno-religius</a><a href="https://id.wikipedia.org/wiki/Gereja_Katolik_Roma" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Gereja Katolik Roma">Katolik Roma</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;yang mengikuti&nbsp;</span><a class="mw-redirect" href="https://id.wikipedia.org/wiki/Ritus_Latin" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Ritus Latin">Ritus Latin</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;dari&nbsp;</span><a href="https://id.wikipedia.org/wiki/Keuskupan_Katolik_Roma_Mangalore" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Keuskupan Katolik Roma Mangalore">Keuskupan Mangalore</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;(terletak di distrik&nbsp;</span><a href="https://id.wikipedia.org/wiki/Kanara_Selatan" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Kanara Selatan">Kanara Selatan</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">) di pesisir barat daya</span><a href="https://id.wikipedia.org/wiki/Karnataka" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Karnataka">Karnataka</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">, India. Mereka adalah&nbsp;</span><a href="https://id.wikipedia.org/wiki/Orang_Konkani" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Orang Konkani">orang Konkani</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;dan berbicara dalam&nbsp;</span><a href="https://id.wikipedia.org/wiki/Bahasa_Konkani" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Bahasa Konkani">bahasa Konkani</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">. Meskipun berbagai pernyataan awal mengenai suatu identitas Katolik Mangalore yang berbeda bermula dari periode migrasi, namun perkembangan identitas budaya Katolik Mangalore baru timbul setelah masa pembuangan. Budaya umat Katolik Mangalore merupakan perpaduan antara</span><a href="https://id.wikipedia.org/wiki/Budaya_Mangalore" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Budaya Mangalore">budaya Mangalore</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;dan&nbsp;</span><a class="new" href="https://id.wikipedia.org/w/index.php?title=Budaya_Goa&amp;action=edit&amp;redlink=1" style="text-decoration: none; color: rgb(165, 88, 88); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Budaya Goa (halaman belum tersedia)">Goa</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">. Setelah migrasi, mereka mengadopsi beberapa aspek budaya Mangalore setempat, tetapi mempertahankan banyak tradisi dan kebiasaan mereka dari Goa; dan layaknya leluhur mereka dari Goa, budaya Katolik Mangalore modern dapat digambarkan secara tepat sebagai suatu budaya Indo-Latin yang disesuaikan dengan norma-norma Inggris.&nbsp;</span><a href="https://id.wikipedia.org/wiki/Diaspora" style="text-decoration: none; color: rgb(11, 0, 128); font-family: sans-serif; font-size: 14px; line-height: 22.4px; background-image: none; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Diaspora">Diaspora</a><span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; line-height: 22.4px;">&nbsp;Katolik Mangalore sebagian besar terkonsentrasi di</span></p>\r\n', 'closeupgaben1.jpg', '2015-12-11 18:55:55'),
 (9, 'asdasd', 'asdasd', 'closeupgaben4.jpg', '2015-12-12 01:04:16'),
 (10, 'naruto mati', 'gini nih asdasdasdasd', 'closeupgaben12.jpg', '2015-12-18 13:20:40'),
 (11, 'asda[psajfjji', 'uiasdh9asfhas0faj9sfj0an0sfj', 'closeupgaben7.jpg', '2015-12-18 13:20:55'),
-(12, 'jokowi', 'asdasdasd', 'Screenshot_3.png', '2015-12-28 18:35:17');
+(12, 'jokowi', 'asdasdasd', 'Screenshot_3.png', '2015-12-28 18:35:17'),
+(13, 'bebi', '<p>asd &nbsp;ads asdasd&nbsp;</p>\r\n', 'Festival_beach_Ancol_Jakarta.jpg', '2016-01-01 13:14:19');
 
 -- --------------------------------------------------------
 
@@ -143,7 +165,12 @@ INSERT INTO `image` (`id_img`, `nama_img`, `full_path`, `id_pariwisata`) VALUES
 (16, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 27),
 (17, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 27),
 (18, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 34),
-(19, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 35);
+(19, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 35),
+(20, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 35),
+(21, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 39),
+(22, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 40),
+(23, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 42),
+(24, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 43);
 
 -- --------------------------------------------------------
 
@@ -712,21 +739,20 @@ CREATE TABLE `pariwisata` (
   `id_jenis_pariwisata` int(11) NOT NULL,
   `id_prov` int(11) NOT NULL,
   `lat` float(10,6) NOT NULL,
-  `lng` float(10,6) NOT NULL
+  `lng` float(10,6) NOT NULL,
+  `counter` int(11) NOT NULL,
+  `foto` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `pariwisata`
 --
 
-INSERT INTO `pariwisata` (`id_pariwisata`, `nm_pariwisata`, `deskripsi`, `id_kota`, `id_jenis_pariwisata`, `id_prov`, `lat`, `lng`) VALUES
-(28, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000),
-(30, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000),
-(31, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000),
-(32, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000),
-(33, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000),
-(34, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000),
-(35, 'asdasdasd', '<p>adasd</p>\r\n', 25, 2, 2, 0.000000, 0.000000);
+INSERT INTO `pariwisata` (`id_pariwisata`, `nm_pariwisata`, `deskripsi`, `id_kota`, `id_jenis_pariwisata`, `id_prov`, `lat`, `lng`, `counter`, `foto`) VALUES
+(43, 'Ancol', '<p>airnya banyak</p>\r\n', 163, 1, 12, -6.132975, 106.826691, 0, 'Festival_beach_Ancol_Jakarta.jpg'),
+(38, 'asdasd', '<p>asd</p>', 60, 1, 3, -6.238270, 106.975571, 1, 'museummonument.JPG'),
+(39, 'jo pj', '<p>ihoj j p pkp</p>', 88, 1, 5, -6.269908, 107.002441, 3, 'museummonument.JPG'),
+(41, 'koplak', '<p>asdasd </p>', 3, 2, 1, -6.276354, 107.011452, 2, 'museummonument.JPG');
 
 -- --------------------------------------------------------
 
@@ -756,7 +782,11 @@ INSERT INTO `pesan` (`id_pesan`, `isi_pesan`, `id_user`) VALUES
 (11, 'Rekomendasi anda yang bernama asdasdasd sudah kami terima, Terima Kasih atas kerjasamanya ', 23),
 (12, 'Rekomendasi anda yang bernama asdasdasd sudah kami terima, Terima Kasih atas kerjasamanya ', 23),
 (13, 'Rekomendasi anda yang bernama asdasdasd kami tidak terima, Terima Kasih atas kerjasamanya ', 23),
-(14, 'Rekomendasi anda yang bernama asdasdasd kami tidak terima, Terima Kasih atas kerjasamanya ', 23);
+(14, 'Rekomendasi anda yang bernama asdasdasd kami tidak terima, Terima Kasih atas kerjasamanya ', 23),
+(15, 'Rekomendasi anda yang bernama jo pj sudah kami terima, Terima Kasih atas kerjasamanya ', 23),
+(16, 'Rekomendasi anda yang bernama jo pj sudah kami terima, Terima Kasih atas kerjasamanya ', 23),
+(17, 'Rekomendasi anda yang bernama Ancol sudah kami terima, Terima Kasih atas kerjasamanya ', 23),
+(18, 'Rekomendasi anda yang bernama Ancol sudah kami terima, Terima Kasih atas kerjasamanya ', 23);
 
 -- --------------------------------------------------------
 
@@ -826,16 +856,27 @@ CREATE TABLE `rekomendasi` (
   `tanggal` datetime NOT NULL,
   `status` int(11) NOT NULL,
   `nama_img` varchar(255) NOT NULL,
-  `full_path` varchar(255) NOT NULL
+  `full_path` varchar(255) NOT NULL,
+  `lat` float(10,6) NOT NULL,
+  `lng` float(10,6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `rekomendasi`
 --
 
-INSERT INTO `rekomendasi` (`id_rekomendasi`, `id_user`, `id_kota`, `id_prov`, `id_jenis_pariwisata`, `nama_pariwisata`, `deskripsi`, `tanggal`, `status`, `nama_img`, `full_path`) VALUES
-(6, 23, 25, 2, 2, 'asdasdasd', '<p>adasd</p>', '2015-12-31 13:20:06', 1, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg'),
-(7, 23, 25, 2, 2, 'asdasdasd', '<p>adasd</p>', '2015-12-31 13:20:44', 2, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg');
+INSERT INTO `rekomendasi` (`id_rekomendasi`, `id_user`, `id_kota`, `id_prov`, `id_jenis_pariwisata`, `nama_pariwisata`, `deskripsi`, `tanggal`, `status`, `nama_img`, `full_path`, `lat`, `lng`) VALUES
+(6, 23, 25, 2, 2, 'asdasdasd', '<p>adasd</p>', '2015-12-31 13:20:06', 1, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 0.000000, 0.000000),
+(7, 23, 25, 2, 2, 'asdasdasd', '<p>adasd</p>', '2015-12-31 13:20:44', 2, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', 0.000000, 0.000000),
+(8, 23, 88, 5, 1, 'jo pj', '<p>ihoj j p pkp</p>', '2016-01-02 03:27:18', 1, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(9, 23, 98, 6, 3, 'A a d asasd  dasd ad', '<p> ads ad adas  </p>', '2016-01-02 03:32:49', 0, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(10, 23, 101, 6, 3, 'asdasd', '<p>dsa </p>', '2016-01-02 03:33:44', 0, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(11, 23, 64, 3, 1, 'd  asd das q r', '<p> asd rqqwr</p>', '2016-01-02 03:34:53', 0, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(12, 23, 30, 2, 2, 'asd', '<p>a sda ds das</p>', '2016-01-02 03:37:41', 0, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(13, 23, 30, 2, 2, 'asd', '<p>a sda ds das</p>', '2016-01-02 03:38:33', 0, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(14, 23, 79, 4, 2, 'ASDASD', '<p>asdasdads</p>', '2016-01-02 03:39:13', 0, 'museummonument.JPG', 'C:/xampp/htdocs/kompress/uploads/museummonument.JPG', 0.000000, 0.000000),
+(15, 23, 163, 12, 1, 'Ancol', '<p>seru banyak air</p>', '2016-01-04 00:33:34', 1, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', -6.132975, 106.826691),
+(16, 23, 163, 12, 1, 'Ancol', '<p>airnya banyak</p>', '2016-01-04 00:46:11', 1, 'Festival_beach_Ancol_Jakarta.jpg', 'C:/xampp/htdocs/kompress/uploads/Festival_beach_Ancol_Jakarta.jpg', -6.132975, 106.826691);
 
 -- --------------------------------------------------------
 
@@ -970,12 +1011,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `aktifitas`
 --
 ALTER TABLE `aktifitas`
-  MODIFY `id_aktifitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id_aktifitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 --
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `contact`
 --
@@ -985,7 +1026,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `image`
 --
 ALTER TABLE `image`
-  MODIFY `id_img` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_img` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `jenis_pariwisata`
 --
@@ -1005,12 +1046,12 @@ ALTER TABLE `kritik_saran`
 -- AUTO_INCREMENT for table `pariwisata`
 --
 ALTER TABLE `pariwisata`
-  MODIFY `id_pariwisata` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_pariwisata` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 --
 -- AUTO_INCREMENT for table `pesan`
 --
 ALTER TABLE `pesan`
-  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `provinsi`
 --
@@ -1020,7 +1061,7 @@ ALTER TABLE `provinsi`
 -- AUTO_INCREMENT for table `rekomendasi`
 --
 ALTER TABLE `rekomendasi`
-  MODIFY `id_rekomendasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_rekomendasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `user`
 --
