@@ -76,23 +76,6 @@
             </div>
           </div>
         </div>
-        <?php else: ?>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-          <div class="container" style="background-color:#79bd9a;" style="word-wrap: break-word;">
-            <div class="caption" style="color:#fff;" >   
-              <h2><?php echo strtoupper($r->nm_pariwisata) ?></h2>
-              <br>
-              <div class="well well-sm" style="color:#333" >
-                <?php echo "$r->nm_prov, $r->nm_kota"; ?>
-                <hr>
-                <p><?php echo substr($r->deskripsi, 0, 50) ?></p>
-              </div>
-              <p><a href="<?php echo base_url('navPariwisata/lihat_pariw/'.md5($r->id_pariwisata)) ?>" class="btn btn-danger" role="button">Lihat</a></p>
-            </div>
-          </div>
-          </div>
-        </div>
         <?php endif ?>
       <?php endforeach ?>
     <?php elseif(isset($notif)): ?>
