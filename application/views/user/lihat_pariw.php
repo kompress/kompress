@@ -17,7 +17,7 @@
     echo "point = new google.maps.LatLng(".$d->lat.",".$d->lng.");
         map = new google.maps.Map(document.getElementById('map-canvas'), {
           center: point,
-          zoom: 16
+          zoom: 17
         });
         var marker = new google.maps.Marker({
           position:point,
@@ -140,4 +140,4 @@
   </div>
   </div>
 </div>
-</div><!-- end row->
+</div><!-- end row -->

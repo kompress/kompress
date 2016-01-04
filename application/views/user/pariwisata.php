@@ -58,7 +58,6 @@
 
   <div class="panel-body scroll">
       <?php foreach ($record as $r): ?>
-        <?php if (!empty($r->foto)): ?>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <img src="<?php echo base_url('uploads/'.$r->foto);?>" alt="...">
@@ -76,7 +75,6 @@
             </div>
           </div>
         </div>
-        <?php endif ?>
       <?php endforeach ?>
     <?php elseif(isset($notif)): ?>
        <div class="container">

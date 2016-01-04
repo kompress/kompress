@@ -95,6 +95,22 @@
                         </div>
                       </div>";
                   } ?>
+             <div class="form-group">
+              <label class="col-md-2 control-label" > Detail</label>
+              <div class="col-sm-10">
+                  <?php echo form_textarea(array('name'=>'Detail','class'=>'form-control1 ckeditor','style'=>'height:100px;')); ?>
+              </div>
+            </div>
+            <?php if (!empty(form_error('detail'))) {
+                 echo "<div class='form-group'>
+                  <div class='col-sm-offset-2 col-sm-10'>
+                      <div class='alert alert-danger' role='alert'>
+                          ".form_error('detail')."
+                      </div>
+                  </div>
+                </div>";
+            } ?>
+
             <div class="form-group">
               <label class="col-md-2 control-label">Input Gambar</label>
               <div class="col-md-10">
@@ -149,7 +165,6 @@
                   </div>
                 </div>";
             } ?>
-           
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10 ">
                 <div id="map-canvas" style="width: 500px; height: 400px; margin-top: 20px; margin-bottom:20px;">
