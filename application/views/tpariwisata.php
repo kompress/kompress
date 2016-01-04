@@ -8,6 +8,7 @@
     <link href="<?php echo base_url(); ?>assets/css/bootstrap3.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/css/mystyle.css" rel="stylesheet">
     <script src="http://maps.google.com/maps/api/js"></script>
+
     <style>
       .scroll{
         overflow: scroll;

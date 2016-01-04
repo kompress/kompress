@@ -55,6 +55,7 @@
   <div class="panel-heading">
     <?php echo $heading1; ?>
   </div>
+
   <div class="panel-body scroll">
       <?php foreach ($record as $r): ?>
         <?php if (!empty($r->foto)): ?>

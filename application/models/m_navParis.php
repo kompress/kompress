@@ -32,7 +32,9 @@ class M_navParis extends CI_Model {
 			return Null;
 		}
     }
-    public function getPariwisataAll(){
+
+
+     public function getPariwisataAll(){
         $query = "	SELECT  p.id_pariwisata, p.nm_pariwisata,p.deskripsi,pr.nm_prov,k.nm_kota,p.foto
 					FROM pariwisata as p
                     INNER JOIN provinsi as pr ON p.id_prov = pr.id_prov
@@ -80,7 +82,10 @@ class M_navParis extends CI_Model {
                     INNER JOIN kota as k ON p.id_kota = k.id_kota
                     INNER JOIN jenis_pariwisata as jp ON p.id_jenis_pariwisata = jp.id_jenis_pariwisata
                     WHERE p.id_jenis_pariwisata = $id and md5(p.id_pariwisata) != '$id_par'
+
                     ORDER BY  RAND() limit 5 
+
+                    ORDER BY  p.nm_pariwisata  ASC limit 5
                     ";
         $result = $this->db->query($query);
         if ($result->num_rows() > 0) {

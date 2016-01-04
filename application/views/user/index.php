@@ -28,6 +28,7 @@
 
       <!--   Icon Section   -->
       <div class="row">
+
         <div class="col s12 m4">
           <div class="card" style="height:500px;">
             <div class="card-content teal darken-5">
@@ -87,8 +88,7 @@
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"><?php echo $b->judul_berita; ?><i class="material-icons right">close</i></span>
               <p><?php echo $b->isi_berita ?></p>
-            </div>
-            
+            </div>            
           </div>
         </div>
         <?php } ?>
