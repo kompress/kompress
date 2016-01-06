@@ -1,8 +1,12 @@
+
 <div class="section">
     <div class="row">
         <div class="col s12">
             <div class="row">
                 <div class="col s12 m3 white">
+                    <div class="col s12">
+                        <h4 class="teal-text darken-4">Pariwisata Terpopuler</h4>
+                    </div>
                     <div class="col s12">
                         <?php foreach($blog->result()as $r) { ?>
                         <div class="card hoverable">
@@ -11,16 +15,15 @@
                             </div>
                             <div class="card-content">
                                 <span class="flow-text"><a class="black-text" href="<?php echo base_url()?>blog/read/<?php echo md5($r->id_berita)?>"><?php echo $r->judul_berita; ?></a></span>
-                                <p class="activator grey-text text-darken-1"><i class="material-icons left">remove_red_eye</i>135</p>
+                                <p class="activator grey-text text-darken-1"><i class="material-icons left">remove_red_eye</i><?php echo $r->counter; ?></p>
                             </div>
                         </div>
                 <?php } ?>
                     </div>
-
+                  
+                    
                 </div>
-            
                 <div class="col s12 m6 white">
-
                     <div class="col s12">
                       <?php foreach($blog->result()as $r) { ?>
                         <div class="card hoverable">

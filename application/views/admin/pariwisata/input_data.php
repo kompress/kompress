@@ -98,7 +98,7 @@
              <div class="form-group">
               <label class="col-md-2 control-label" > Detail</label>
               <div class="col-sm-10">
-                  <?php echo form_textarea(array('name'=>'Detail','class'=>'form-control1 ckeditor','style'=>'height:100px;')); ?>
+                  <?php echo form_textarea(array('name'=>'detail','class'=>'form-control1 ckeditor','style'=>'height:100px;')); ?>
               </div>
             </div>
             <?php if (!empty(form_error('detail'))) {

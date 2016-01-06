@@ -21,7 +21,7 @@ class Registrasi extends CI_Controller{
 
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('nama','Nama Lengkap','trim|required|min_length[4]|xss_clean');
-		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]|xss_clean');
+		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]|max_length[15]|xss_clean');
 		$this->form_validation->set_rules('email', 'Alamat Email', 'trim|required|valid_email');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
 		$this->form_validation->set_rules('con_password', 'Password Confirmation', 'trim|required|matches[password]');

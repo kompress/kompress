@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/kompress';
+$config['base_url'] = 'http://localhost/kompress/';
 
 /*
 |--------------------------------------------------------------------------

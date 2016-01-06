@@ -17,7 +17,8 @@ class Home extends CI_Controller{
     }
 
     function index(){
-        
+        $this->data['index']['slide']  = $this->m_user->slide();
+        $this->data['index']['populer']  = $this->m_user->indexPopuler();
         $this->data['index']['berita'] =  $this->berita();
         $this->template->load('template_user','user/index', $this->data['index']);
     }

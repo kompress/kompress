@@ -114,6 +114,23 @@
                 </div>";
             } ?>
             <div class="form-group">
+              <label for="" class="col-md-2 control-label">Detail</label>
+              <div class="col-sm-10">
+              <?php foreach($record->result() as $r){ ?>
+                <?php echo form_textarea(array('name'=>'detail','class'=>'form-control1 ckeditor','style'=>'height:100px;','value'=>$r->detail)); ?>
+              <?php } ?>
+              </div>
+            </div>
+            <?php if (!empty(form_error('detail'))) {
+                 echo "<div class='form-group'>
+                  <div class='col-sm-offset-2 col-sm-10'>
+                      <div class='alert alert-danger' role='alert'>
+                          ".form_error('detail')."
+                      </div>
+                  </div>
+                </div>";
+            } ?>
+            <div class="form-group">
                 <label class="col-md-2">foto</label>
                 <div class="col-md-10" style="width:171px;">
                     <div class="thumbnail">
@@ -171,7 +188,7 @@
               } ?>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button name="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Input</button> <a href="<?php echo base_url('admin/c_pariwisata/LihatData'); ?>" class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Kembali</a>
+                    <button name="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Perbarui</button> <a href="<?php echo base_url('admin/c_pariwisata/LihatData'); ?>" class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Kembali</a>
                 </div>
             </div>
         </div>

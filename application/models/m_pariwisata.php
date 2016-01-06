@@ -58,7 +58,7 @@
 
         function AmbilDataGambar($id){
 
-        	$query = 	"SELECT pariwisata.id_pariwisata, pariwisata.nm_pariwisata, pariwisata.deskripsi, jenis_pariwisata.nama_jenis, provinsi.nm_prov, kota.nm_kota, jenis_pariwisata.id_jenis_pariwisata,pariwisata.lat,pariwisata.lng,pariwisata.foto
+        	$query = 	"SELECT pariwisata.id_pariwisata, pariwisata.nm_pariwisata, pariwisata.deskripsi, jenis_pariwisata.nama_jenis, provinsi.nm_prov, kota.nm_kota, jenis_pariwisata.id_jenis_pariwisata,pariwisata.lat,pariwisata.lng,pariwisata.foto,pariwisata.detail
 						FROM `pariwisata`
 						JOIN jenis_pariwisata ON pariwisata.id_jenis_pariwisata = jenis_pariwisata.id_jenis_pariwisata
 						JOIN provinsi ON pariwisata.id_prov = provinsi.id_prov
@@ -101,4 +101,5 @@
             
             $this->db->insert('rekomendasi',$rekomen);
         }
+       
 }

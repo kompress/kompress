@@ -40,7 +40,6 @@
       <a href="<?php echo base_url(); ?>" class="brand-logo white-text"><strong>Wisata Indonesia</strong></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="<?php echo base_url('navPariwisata'); ?>" class="white-text active"><strong>Pariwisata</strong></a></li>
-          <li><a href="<?php echo base_url('maps'); ?>" class="white-text"><strong>Peta</strong></a></li>
           <li><a href="<?php echo base_url('blog'); ?>" class="white-text"><strong>Berita</strong></a></li>
 
           <?php if($this->session->userdata('Login')=='berhasil' && $this->session->userdata('level')==0  && $this->session->userdata('active')==1){ ?>
@@ -63,10 +62,9 @@
           
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
+        <ul id="nav-mobile" class="side-nav teal">
 
           <li><a href="<?php echo base_url('navPariwisata'); ?>" class="white-text active"><strong>Pariwisata</strong></a></li>
-          <li><a href="<?php echo base_url('maps'); ?>" class="white-text"><strong>Peta</strong></a></li>
           <li><a href="<?php echo base_url('blog'); ?>" class="white-text"><strong>Berita</strong></a></li>
           <?php if($this->session->userdata('Login')=='berhasil' && $this->session->userdata('level')==0  && $this->session->userdata('active')==1){ ?>
             <ul id="dropdown2" class="dropdown-content">
@@ -129,12 +127,6 @@
           <ul>
             <li><a class="white-text" href="<?php echo base_url('navPariwisata') ?>">Pariwisata</a></li>
             <li><a class="white-text" href="<?php echo base_url('blog') ?>">Berita</a></li>
-          </ul>
-        </div>
-        <div class="col l2 s12">
-          <h5 class="white-text">Cari</h5>
-          <ul>
-            <li><a class="white-text" href="#">Peta</a></li>
           </ul>
         </div>
         <div class="col l2 s12">

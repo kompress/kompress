@@ -24,6 +24,7 @@
 		        $limit                = $limit==''?0:$limit;
 		        $this->data['paging']       = $this->pagination->create_links();
 			$this->data['blog']         = $this->m_berita->berita($config['per_page'],$offset);
+			$this->data['populer']		= $this->m_berita->ambilTerpopuler();
 			$this->template->load('template_user','user/berita/berita',$this->data);
 		}
 

@@ -61,14 +61,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo base_url('') ?>">TripVisor</a>
+          <a class="navbar-brand" href="<?php echo base_url('') ?>">Wisata Indonesia</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo base_url('navPariwisata'); ?>"><strong>Pariwisata</strong></a></li>
-            <li><a href="<?php echo base_url('maps'); ?>"><strong>Peta</strong></a></li>
             <li><a href="<?php echo base_url('blog'); ?>"><strong>Berita</strong></a></li>
             <?php if($this->session->userdata('Login')=='berhasil' && $this->session->userdata('level')==0  && $this->session->userdata('active')==1){ ?>
             <li class="dropdown">
@@ -119,14 +118,6 @@
               <li><a href="<?php echo base_url('blog') ?>">Berita</a></li>
             </ul>
           </div><!-- end row -->
-          </div><!-- end col-sm-3 -->
-          <div class="col-sm-2">
-          <div class="container">
-           <h4>Cari</h4>
-           <ul>
-             <li><a href="#">Peta</a></li>
-           </ul>
-          </div>
           </div><!-- end col-sm-3 -->
           <div class="col-sm-2">
           <div class="container">

@@ -57,8 +57,6 @@
             $this->form_validation->set_rules('jenis', 'Jenis', 'required|trim|xss_clean');
             $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|trim|xss_clean');
             $this->form_validation->set_rules('nama_kota','Nama Kota','required|trim|xss_clean');
-            $this->form_validation->set_rules('lat','Latitude Lokasi','required|trim|xss_clean');
-            $this->form_validation->set_rules('lng','Longitude','required|trim|xss_clean');
             $this->form_validation->set_error_delimiters('<span class="error">', '</span>');
             if(isset($_POST['submit'])) {
                 if($this->form_validation->run()==FALSE){
@@ -95,6 +93,22 @@
                         $id_user                = $this->session->userdata('id_user');
                         $lat                    = $this->input->post('lat');
                         $lng                    = $this->input->post('lng');
+                        if (isset($lng)&&isset($lat)) {
+                            $rekomen = array(
+                            
+                            'id_prov'               => $prov,
+                            'nama_pariwisata'       => $nama_pariwisata,
+                            'id_jenis_pariwisata'   => $jenis,
+                            'deskripsi'             => $deskripsi,
+                            'id_kota'               => $nama_kota,
+                            'id_user'               => $id_user,
+                            'status'                => '0',
+                            'tanggal'               => gmdate("Y-m-d H:i:s", time()+60*60*7),
+                            'nama_img'              => $nama_img,
+                            'full_path'             => $path,
+                            );    
+                        }else{
+
                         $rekomen = array(
                             
                             'id_prov'               => $prov,
@@ -110,6 +124,7 @@
                             'lat'                   => $lat,
                             'lng'                   => $lng
                         );
+                        }
                         $this->m_pariwisata->InputRekomendasi($rekomen);
                         $this->data['input_data']['notif'] = "Success";
                         $this->data['input_data']['prov'] = $this->m_provinsi->AmbilData();

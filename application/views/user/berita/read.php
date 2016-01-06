@@ -1,10 +1,10 @@
 <?php 
-  $id = $this->uri->segment(4);
+  $id = $this->uri->segment(3);
   $ip = $this->input->ip_address();
   //setcookie("visitor","tyo",time()-3600);
   if(!isset($_COOKIE['visitor'])){
     setcookie("visitor","tyo",time()+60);
-    $query = "UPDATE pariwisata SET counter  = counter + 1 WHERE md5(id_pariwisata) ='$id'";
+    $query = "UPDATE berita SET counter  = counter + 1 WHERE md5(id_berita) ='$id'";
     $result = $this->db->query($query);
   }
  ?>

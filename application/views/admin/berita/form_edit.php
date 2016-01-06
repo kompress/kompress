@@ -41,7 +41,7 @@
             </div>
             <div class="form-group">
                 <div class="col-md-10 col-md-offset-2">
-                    <input type="submit" name="submit" class="btn btn-primary"/> <a href="<?php echo base_url('admin/c_berita'); ?>" class="btn btn-danger">Kembali</a>
+                    <input type="submit" name="submit" value="Perbaharui" class="btn btn-danger"/> <a href="<?php echo base_url('admin/c_berita'); ?>" class="btn btn-danger">Kembali</a>
                 </div>
             </div>
         </div>

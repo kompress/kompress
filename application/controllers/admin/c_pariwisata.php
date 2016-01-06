@@ -72,6 +72,7 @@
             $this->form_validation->set_rules('nama_kota','Nama Kota','required|trim|xss_clean');
             $this->form_validation->set_rules('lat','latitude lokasi','required|trim|xss_clean');
             $this->form_validation->set_rules('lng','longitude lokasi','required|trim|xss_clean');
+            $this->form_validation->set_rules('detail','Detail','required|trim|xss_clean');
 			$this->form_validation->set_error_delimiters('<span class="error">', '</span>');
             if(isset($_POST['submit'])) {
                 if($this->form_validation->run()==FALSE){
@@ -105,6 +106,7 @@
                         $prov                   = $this->input->post('nama_provinsi');
                         $lat                    = $this->input->post('lat');
                         $lng                    = $this->input->post('lng');
+                        $detail                 = $this->input->post('detail');
                         $input = array(
                             'id_prov'               =>$prov,
                             'nm_pariwisata'         =>$nama_pariwisata,
@@ -113,7 +115,8 @@
                             'id_kota'               =>$nama_kota,
                             'lat'                   =>$lat,
                             'lng'                   =>$lng,
-                            'foto'                  =>$nama_img
+                            'foto'                  =>$nama_img,
+                            'detail'                =>$detail
                         );
                         $id      = $this->session->userdata('id_user');
                         $date    = gmdate("Y-m-d H:i:s", time()+60*60*7);
@@ -204,6 +207,7 @@
             $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|trim|xss_clean');
             $this->form_validation->set_rules('lat','latitude lokasi','required|trim|xss_clean');
             $this->form_validation->set_rules('lng','longitude lokasi','required|trim|xss_clean');
+            $this->form_validation->set_rules('detail','Detail','required|trim|xss_clean');
             $this->form_validation->set_error_delimiters('<span class="error">', '</span>');
             if (isset($_POST['submit'])) {
                  if($this->form_validation->run()==FALSE){
@@ -220,6 +224,7 @@
                         $deskripsi      = $this->input->post('deskripsi');
                         $lat            = $this->input->post('lat');
                         $lng            = $this->input->post('lng');
+                        $detail         = $this->input->post('detail');
 
                         $data = array(
 
@@ -227,6 +232,7 @@
                             'deskripsi'     => $deskripsi,
                             'lat'           => $lat,
                             'lng'           => $lng,
+                            'detail'        => $detail
                         );
                         $id_user = $this->session->userdata('id_user');
                         $date    = gmdate("Y-m-d H:i:s", time()+60*60*7);
@@ -261,6 +267,7 @@
                         $deskripsi      = $this->input->post('deskripsi');
                         $lat            = $this->input->post('lat');
                         $lng            = $this->input->post('lng');
+                        $detail         = $this->input->post('detail');
 
                         $data = array(
 
@@ -268,7 +275,8 @@
                             'deskripsi'     => $deskripsi,
                             'lat'           => $lat,
                             'lng'           => $lng,
-                            'foto'          => $foto
+                            'foto'          => $foto,
+                            'detail'        => $detail
                         );
                         $id_user = $this->session->userdata('id_user');
                         $date    = gmdate("Y-m-d H:i:s", time()+60*60*7);

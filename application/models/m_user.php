@@ -56,6 +56,27 @@ class M_user extends CI_Model {
         	return array();
         }
     }
+    function slide(){
+
+        $query = "SELECT nm_pariwisata , foto, id_pariwisata FROM pariwisata ORDER BY RAND() LIMIT 5 ";
+        $result = $this->db->query($query);
+        if ($result->num_rows() > 0) {
+            return $result->result();
+        } else {
+            return Null;
+        }
+    }
+
+    function indexPopuler(){
+
+        $query = "SELECT nm_pariwisata, id_pariwisata, foto FROM pariwisata ORDER BY counter DESC LIMIT 6";
+        $result = $this->db->query($query);
+        if ($result->num_rows() > 0) {
+            return $result->result();
+        } else {
+            return NULL;
+        }
+    }
 
 }
 

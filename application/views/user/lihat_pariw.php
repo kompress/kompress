@@ -25,7 +25,7 @@
           title:'tes'
         });
         var infowindow = new google.maps.InfoWindow({
-          content:'<h1>".$d->nm_pariwisata."</h1>',
+          content:'<h3>".$d->nm_pariwisata."</h3>',
           width:200
         });
         google.maps.event.addListener(marker, 'click', function() {
@@ -57,7 +57,7 @@
               <p><?php echo $d->deskripsi; ?></p>
             </div>
             <div class="card-action">
-              <a href="<?php echo base_url('user/navPariwisata') ?>">Kembali Pilih pariwisata</a>
+              <a href="<?php echo base_url('navPariwisata') ?>">Kembali Pilih pariwisata</a>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
   <div class="col s4">
     <div class="card">
     <div class="card-panel teal lighten-2" style="color:#fff;"> 
-      <center><h5>Suggest Pariwisata</h5></center>
+      <center><h5> Terkait</h5></center>
     </div>
     <div class="row">
       <div class="col s12">

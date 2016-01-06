@@ -60,4 +60,14 @@ class M_berita extends CI_Model{
         $query=$this->db->get('berita');
         return $query;
     }
+
+    function ambilTerpopuler(){
+        $query ="SELECT foto_berita, judul_berita from berita ORDER BY counter DESC limit 3";
+        $result = $this->db->query($query);
+        if ($result->num_rows() > 0) {
+            return $result->result();
+        } else {
+            return NULL;
+        }
+    }
 }

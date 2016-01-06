@@ -18,12 +18,23 @@ class M_navParis extends CI_Model {
 
     public function getPariwisata(){
         $id = $this->input->post('kota');
-        $query = "	SELECT DISTINCT p.id_pariwisata, p.nm_pariwisata,p.deskripsi,pr.nm_prov,k.nm_kota,p.foto
-					FROM pariwisata as p
-                    INNER JOIN provinsi as pr ON p.id_prov = pr.id_prov
-                    INNER JOIN kota as k ON p.id_kota = k.id_kota
-                    INNER JOIN jenis_pariwisata as jp ON p.id_jenis_pariwisata = jp.id_jenis_pariwisata
-					WHERE p.id_kota = $id";
+        $jenis = $this->input->post('jenis');
+        if (empty($jenis)) {
+            $query = "  SELECT DISTINCT p.id_pariwisata, p.nm_pariwisata,p.deskripsi,pr.nm_prov,k.nm_kota,p.foto
+                        FROM pariwisata as p
+                        INNER JOIN provinsi as pr ON p.id_prov = pr.id_prov
+                        INNER JOIN kota as k ON p.id_kota = k.id_kota
+                        INNER JOIN jenis_pariwisata as jp ON p.id_jenis_pariwisata = jp.id_jenis_pariwisata
+                        WHERE p.id_kota = $id ";
+        } else {
+
+            $query = "  SELECT DISTINCT p.id_pariwisata, p.nm_pariwisata,p.deskripsi,pr.nm_prov,k.nm_kota,p.foto
+                        FROM pariwisata as p
+                        INNER JOIN provinsi as pr ON p.id_prov = pr.id_prov
+                        INNER JOIN kota as k ON p.id_kota = k.id_kota
+                        INNER JOIN jenis_pariwisata as jp ON p.id_jenis_pariwisata = jp.id_jenis_pariwisata
+                        WHERE p.id_kota = $id AND p.id_jenis_pariwisata = $jenis";
+        }
 		$result = $this->db->query($query);
 		if ($result->num_rows() > 0) {
 			return $result->result();

@@ -12,7 +12,7 @@ class NavPariwisata extends CI_Controller {
 		$this->data = array(
 			'title'		=> 'Pariwisata',	
 			'heading' 	=> 'Pilih Lokasi',
-			'heading1' 	=> 'Hasil Pariwisata',
+			'heading1' 	=> 'Hasil Pencarian Pariwisata',
 			'prov'    	=> $this->m_provinsi->AmbilData(),
 			'pengguna'	=> $this->m_login->data($user),
 			'jenis'		=> $this->m_jenis_pariwisata->AmbilData()

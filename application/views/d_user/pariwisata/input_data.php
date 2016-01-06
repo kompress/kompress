@@ -9,7 +9,7 @@
        <div class="col-md-offset-1 col-md-10">
        <div class="form-horizontal">
           <div class="form-group">
-              <label class="col-md-2 control-label" >Nama Provinsi</label>
+              <label class="col-md-2 control-label" >Nama Provinsi <span style="color:red;">*</span></label>
               <div class="col-sm-10">
                   <select class="form-control1" name="nama_provinsi" id="provinsi" >
                       <option value="" >Pilih</option>
@@ -29,7 +29,7 @@
                       </div>";
             } ?>
             <div class="form-group">
-                <label class="col-md-2 control-label" >Nama Kota</label>
+                <label class="col-md-2 control-label" >Nama Kota <span style="color:red;">*</span></label>
                 <div class="col-sm-10">
                     <select class="form-control1" name="nama_kota" id="kota">
                         <option value="" >Pilih</option>
@@ -48,7 +48,7 @@
             } ?>
 
             <div class="form-group">
-                <label class="col-md-2 control-label" >Nama Pariwisata</label>
+                <label class="col-md-2 control-label" >Nama Pariwisata <span style="color:red;">*</span></label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control1"  name="nama_pariwisata"  placeholder="Nama Pariwisata" >
                 </div>
@@ -63,7 +63,7 @@
                   </div>";
           } ?>
             <div class="form-group">
-            <label class="col-md-2 control-label" >Jenis Pariwisata</label>
+            <label class="col-md-2 control-label" >Jenis Pariwisata <span style="color:red;">*</span></label>
                 <div class="col-sm-10">
                     <select class="form-control1" name="jenis">
                         <option value="" >--Pilih--</option>
@@ -83,7 +83,7 @@
                       </div>";
             } ?>
             <div class="form-group">
-              <label for="" class="col-md-2 control-label">Deskripsi Pariwisata</label>
+              <label for="" class="col-md-2 control-label">Deskripsi Pariwisata <span style="color:red;">*</span></label>
               <div class="col-sm-10">
                 <?php echo form_textarea(array('name'=>'deskripsi','class'=>'form-control1 ckeditor','style'=>'height:100px;')); ?>
               </div>
@@ -98,7 +98,7 @@
                   </div>";
             } ?>
             <div class="form-group">
-              <label for="" class="col-md-2 control-label">Foto</label>
+              <label for="" class="col-md-2 control-label">Foto <span style="color:red;">*</span> </label>
               <div class="col-sm-10">
                 <input type="file" name="userfile" required="TRUE">
                 <br>
@@ -127,7 +127,7 @@
               <div class="form-group">
               <label class="col-md-2 control-label" > latitude lokasi</label>
               <div class="col-sm-10">
-                  <input type="text" name="lat" id="lat" class="form-control1">
+                  <input type="text" name="lat" id="lat" class="form-control1" autocomplete="" value="">
               </div>
             </div>
              <?php if (!empty(form_error('lat'))) {
@@ -157,7 +157,7 @@
            
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10 ">
-                <div id="map-canvas" style="width: 500px; height: 400px; margin-top: 20px; margin-bottom:20px;">
+                <div id="map-canvas" style="width: 500px; height: 400px; margin-top: 20px; margin-bottom:20px;"> 
               </div>
             </div>
               <?php 
