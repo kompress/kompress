@@ -15,7 +15,7 @@
 
 		function index($offset=NULL){
 			$this->load->library('pagination');
-			$config['base_url']   = 'http://localhost/kompress/blog/index/';    
+			$config['base_url']   = 'http://localhost/kompress/berita/index/';    
 		        $config['total_rows'] = $this->m_berita->AmbilBerita()->num_rows(); 
 		        $config['per_page']   = 2; 
 

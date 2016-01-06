@@ -57,27 +57,24 @@
     <?php echo $heading1; ?>
   </div>
 
-  <div class="panel-body scroll" style="height:600px;">
+  <div class="panel-body scroll" style="height:700px;">
+    <div class="row">
       <?php foreach ($record as $r): ?>
-        <a href="<?php echo base_url('navPariwisata/lihat_pariw/'.md5($r->id_pariwisata)) ?>">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" style="height:440px;">
-            <img src="<?php echo base_url('uploads/'.$r->foto);?>" alt="...">
-            <div class="container" style="background-color:#79bd9a; height:300px;">
-            <div class="caption" style="color:#fff;">
-              <h2><?php echo strtoupper($r->nm_pariwisata) ?></h2>
-              <br>
-              <div class="well well-sm" style="color:#333">
-                <?php echo "$r->nm_prov, $r->nm_kota"; ?>
-                <hr>
-                <p><?php echo substr($r->deskripsi, 0, 50) ?></p>
+          
+          <div class="col-sm-6 col-md-4">
+          <a href="<?php echo base_url('navPariwisata/lihat_pariw/'.md5($r->id_pariwisata)) ?>">
+            <div class="thumbnail" style="height:500px;">
+              <img style="height:300px;" src="<?php echo base_url('uploads/'.$r->foto); ?>" alt="...">
+              <div  class="caption" style="background-color:#009688; color:#fff; height:200px;">
+                <h3><?php echo $r->nm_pariwisata ?></h3>
+                <p><?php echo $r->nm_prov, $r->nm_kota ?></p>
               </div>
             </div>
-            </div>
+             </a>
           </div>
-        </div>
-        </a>
+         
       <?php endforeach ?>
+    </div>
     <?php elseif(isset($notif)): ?>
        <div class="container">
         <div class="alert alert-info" role="alert">

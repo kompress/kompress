@@ -58,7 +58,8 @@ class M_user extends CI_Model {
     }
     function slide(){
 
-        $query = "SELECT nm_pariwisata , foto, id_pariwisata FROM pariwisata ORDER BY RAND() LIMIT 5 ";
+        $query = "SELECT nm_pariwisata , foto, id_pariwisata FROM pariwisata WHERE foto != '' ORDER BY RAND() LIMIT 5 
+                  ";
         $result = $this->db->query($query);
         if ($result->num_rows() > 0) {
             return $result->result();

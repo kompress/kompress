@@ -3,10 +3,12 @@
     <?php foreach($slide as $s){
 
     echo   "<li>
-              <img src='".base_url('assets/images/'.$s->foto)."'>
+              <a href='".base_url('navPariwisata/lihat_pariw/'.md5($s->id_pariwisata))."'>
+              <img src='".base_url('uploads/'.$s->foto)."'>
               <div class='caption center-align'>
-                <a style='color:#fff;' href='".base_url('navPariwisata/lihat_pariw/'.md5($s->id_pariwisata))."'><h3>".$s->nm_pariwisata."</h3></a>
+                <h3>".ucfirst($s->nm_pariwisata)."</h3>
               </div>
+              </a>
             </li>";
     } ?>
     </ul>
@@ -48,12 +50,12 @@
         </div>
         <?php foreach ($berita->result() as $b) { ?>
         <div class="col s12 m4">
-          <div class="card hoverable" style="height:300px;">
+          <div class="card hoverable" style="height:450px;">
             <div class="card-image waves-effect waves-block waves-light" style="height:160px;">
               <img class="activator" src="<?php echo base_url('uploads/berita/'.$b->foto_berita);?>">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"><?php echo $b->judul_berita ?><i class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4"><?php echo $b->judul_berita ?></span>
               <p><a href="<?php echo base_url(); ?>berita/read/<?php echo md5($b->id_berita); ?>">Read More.....</a></p>
             </div>
             <div class="card-reveal">
@@ -77,10 +79,7 @@
 
     <!--   Icon Section   -->
     <div class="row">
-      
-      <div class="col s12">
-      titit
-      </div>
+
     </div>
   </div>
 </div>
