@@ -54,7 +54,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4"><?php echo $b->judul_berita ?><i class="material-icons right">more_vert</i></span>
-              <p><a href="<?php echo base_url(); ?>blog/read/<?php echo md5($b->id_berita); ?>">Read More.....</a></p>
+              <p><a href="<?php echo base_url(); ?>berita/read/<?php echo md5($b->id_berita); ?>">Read More.....</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"><?php echo $b->judul_berita; ?><i class="material-icons right">close</i></span>
@@ -65,12 +65,24 @@
         <?php } ?>
 
         <ul class="pagination right">
-          <li class="active waves-effect"><a href='<?php echo base_url('blog') ?>'>Lihat Selengkapnya..</a></li>
+          <li class="active waves-effect"><a href='<?php echo base_url('berita') ?>'>Lihat Selengkapnya..</a></li>
         </ul>
       
       </div>
 
     </div>
   </div>
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      
+      <div class="col s12">
+      titit
+      </div>
+    </div>
+  </div>
+</div>
 
  

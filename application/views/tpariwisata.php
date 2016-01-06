@@ -68,7 +68,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo base_url('navPariwisata'); ?>"><strong>Pariwisata</strong></a></li>
-            <li><a href="<?php echo base_url('blog'); ?>"><strong>Berita</strong></a></li>
+            <li><a href="<?php echo base_url('berita'); ?>"><strong>Berita</strong></a></li>
             <?php if($this->session->userdata('Login')=='berhasil' && $this->session->userdata('level')==0  && $this->session->userdata('active')==1){ ?>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <?php if(!empty($pengguna->nama)){echo $pengguna->nama;} ?> <span class="caret"></span></a>

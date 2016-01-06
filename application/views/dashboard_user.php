@@ -27,7 +27,7 @@
     <!-- jQuery -->
     <script src="<?php echo base_url();?>assets/js/ckeditor/ckeditor.js"></script>
     <script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
     <script type="text/javascript">
         var geocoder;
         var map;

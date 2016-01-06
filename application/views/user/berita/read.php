@@ -40,7 +40,7 @@
                                 <li class="collection-item avatar">
                                     <img src="<?php echo base_url('uploads/berita/'.$r->foto_berita);?>" alt="" class="circle">
                                     <span class="title">
-                                        <a class="grey-text text-darken-1 " href="<?php echo base_url(); ?>blog/read/<?php echo md5($r->id_berita); ?>">
+                                        <a class="grey-text text-darken-1 " href="<?php echo base_url(); ?>berita/read/<?php echo md5($r->id_berita); ?>">
                                         <?php echo $r->judul_berita; ?></a>
                                     </span>
                                     <p class="activator grey-text text-darken-1"><i class="material-icons left">date_range</i><?php echo $r->tanggal; ?></p>
