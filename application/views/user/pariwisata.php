@@ -59,10 +59,11 @@
 
   <div class="panel-body scroll" style="height:600px;">
       <?php foreach ($record as $r): ?>
+        <a href="<?php echo base_url('navPariwisata/lihat_pariw/'.md5($r->id_pariwisata)) ?>">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail" style="height:440px;">
             <img src="<?php echo base_url('uploads/'.$r->foto);?>" alt="...">
-            <div class="container" style="background-color:#79bd9a; height:400px;">
+            <div class="container" style="background-color:#79bd9a; height:300px;">
             <div class="caption" style="color:#fff;">
               <h2><?php echo strtoupper($r->nm_pariwisata) ?></h2>
               <br>
@@ -71,11 +72,11 @@
                 <hr>
                 <p><?php echo substr($r->deskripsi, 0, 50) ?></p>
               </div>
-              <p><a href="<?php echo base_url('navPariwisata/lihat_pariw/'.md5($r->id_pariwisata)) ?>" class="btn btn-danger" role="button">Lihat</a></p>
             </div>
             </div>
           </div>
         </div>
+        </a>
       <?php endforeach ?>
     <?php elseif(isset($notif)): ?>
        <div class="container">
